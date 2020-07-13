@@ -14,7 +14,7 @@ pipeline {
       }
       stage('to view processes') {
          steps {
-            sh 'top'
+            sh 'ps aux'
          }
       }
    }
