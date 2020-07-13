@@ -12,5 +12,10 @@ pipeline {
               sh 'df -kh'
           }
       }
+      stage('to view processes') {
+         steps {
+            sh 'top'
+         }
+      }
    }
 }
